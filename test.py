@@ -12,6 +12,16 @@ class test_mat(unittest.TestCase):
 		res = [2,2,2][2,4,6]
 		self.assertEqual(res, self.mm.Matrix.addition(self.mat,self.mat))
 
+        def test_mult_mat(self):
+	
+		res = [1,1,1][1,4,9]
+		self.assertEqual(res, self.mm.Matrix.multiplication(self.mat,self.mat))
+
+	def test_sub_mat(self):
+	
+		res = [0,0,0][0,0,0]
+		self.assertEqual(res, self.mm.Matrix.multiplication(self.mat,self.mat))
+
 
 
 if __name__==  '__main__':
